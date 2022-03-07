@@ -1,6 +1,7 @@
 import React from "react";
 
 import "./App.css";
+
 import Search from "./Search";
 
 export default function App() {
@@ -12,16 +13,17 @@ export default function App() {
             <Search />
           </div>
         </div>
+
+        <small>
+          <a href="https://github.com/kszajko46" target="_blank">
+            Open-source code
+          </a>{" "}
+          by{" "}
+          <a href="https://www.linkedin.com/in/kata-szajko/" target="_blank">
+            Kata Szajko
+          </a>
+        </small>
       </div>
-      <small>
-        <a href="https://github.com/kszajko46" target="_blank">
-          Open-source code
-        </a>{" "}
-        by{" "}
-        <a href="https://www.linkedin.com/in/kata-szajko/" target="_blank">
-          Kata Szajko
-        </a>
-      </small>
     </div>
   );
 }
