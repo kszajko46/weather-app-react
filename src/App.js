@@ -2,16 +2,15 @@ import React from "react";
 
 import "./App.css";
 
-import Search from "./Search";
+import Weather from "./Weather";
 
 export default function App() {
   return (
     <div className="App">
-      <div class="container">
-        <div class="weather-app-wrapper">
-          <div class="weather-app">
-            <Search />
-          </div>
+      <div className="container">
+        <div className="weather-app-wrapper">
+          <div className="weather-app"></div>
+          <Weather />
         </div>
 
         <small>
