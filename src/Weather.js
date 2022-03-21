@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import WeatherIcon from "./WeatherIcon";
+import FormattedDate from "./FormattedDate";
 import "./Weather.css";
 import axios from "axios";
 
@@ -14,7 +15,7 @@ export default function Weather(props) {
       description: response.data.weather[0].description,
       Icon: response.data.weather[0].icon,
       city: response.data.name,
-      date: "Wednesday 07:00",
+      date: new Date(response.data.dt * 1000),
     });
   }
   if (weatherData.ready) {
@@ -42,19 +43,15 @@ export default function Weather(props) {
 
         <h1>{weatherData.city}</h1>
         <ul>
-          <li>{weatherData.date}</li>
+          <li>
+            <FormattedDate date={weatherData.date} />
+          </li>
           <li className="text-capitalize">{weatherData.description}</li>
         </ul>
         <div className="row mt-3">
           <div className="col-6">
             <div className="clearfix">
               <div className="float-left">
-                <div className="float-left">
-                  <WeatherIcon
-                    code={props.data.icon}
-                    alt={props.data.description}
-                  />
-                </div>
                 <span className="temperature">{weatherData.temp}</span>
                 <span className="unit">℃</span>
               </div>
