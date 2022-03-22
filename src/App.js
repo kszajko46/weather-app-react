@@ -14,13 +14,8 @@ export default function App() {
         </div>
 
         <small>
-          <a href="https://github.com/kszajko46" target="_blank">
-            Open-source code
-          </a>{" "}
-          by{" "}
-          <a href="https://www.linkedin.com/in/kata-szajko/" target="_blank">
-            Kata Szajko
-          </a>
+          <a href="https://github.com/kszajko46">Open-source code</a> by{" "}
+          <a href="https://www.linkedin.com/in/kata-szajko/">Kata Szajko</a>
         </small>
       </div>
     </div>
