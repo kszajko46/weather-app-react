@@ -16,22 +16,14 @@ export default function ForecastDaily(props) {
     let date = new Date(props.data.dt * 1000);
     let day = date.getDay();
 
-    let days = [
-      "Sunday",
-      "Monday",
-      "Tuseday",
-      "Wednesday",
-      "Thursday",
-      "Friday",
-      "saturday",
-    ];
+    let days = ["Sun", "Mon", "Tuse", "Wed", "Thur", "Fri", "sat"];
 
     return days[day];
   }
 
   return (
     <div>
-      <div className="ForecastDay">{day()}</div>
+      <div className="ForecastDaily">{day()}</div>
 
       <WeatherIcon code={props.data.weather[0].icon} size={36} />
 

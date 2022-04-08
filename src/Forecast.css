@@ -4,5 +4,11 @@
 
 .ForecastMin {
   opacity: 0.6;
-  margin-left: 5px;
+}
+
+.ForecastDaily {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

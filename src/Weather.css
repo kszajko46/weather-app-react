@@ -27,7 +27,6 @@
 }
 
 .Weather canvas {
-  width: 64px;
   float: left;
   margin-right: 10px;
 }
@@ -45,4 +44,8 @@
   font-weight: 400;
   margin-left: 5px;
   line-height: 1;
+}
+
+.btn-primary {
+  color: black;
 }
